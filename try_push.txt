@@ -1,0 +1,3 @@
+This is from line 34 in hello.py 
+This is from line 34 in hello.py 
+Python seems to be really cool!

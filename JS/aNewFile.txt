@@ -1,0 +1,6 @@
+This is something to write in the new fileThis is something to write in the new fileThis is something to write in the new file 
+This is something to write in the new file 
+This is something to write in the new file 
+undefined
+undefined
+Need to replace this with a user input method of some sort, but this is the default message

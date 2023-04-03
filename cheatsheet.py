@@ -1,3 +1,16 @@
+# Comments
+
+# This is a traditional single line comment
+
+#This is a traditions
+#multi-line comment
+
+'''
+However...
+It\'s a touch cheeky because you aren\'t actually using a comment, but
+this can be used as a comment because Pyton will ignore strings that are
+not assigned to a variable
+'''
 # VARIABLES
 test_variable = [1]
 
@@ -42,7 +55,6 @@ if print_methods == True:
     #.format - can be used to input variables in to a string similar to the backtick method in JS
     type(test_variable) # Same as type of in JS
 
-
     ## OPERATORS (only the ones that are different from JS)
     # can use the multiply operator to return a variable x ammount of times
     print(test_variable * 4)
@@ -50,7 +62,7 @@ if print_methods == True:
     # Replace && with the word and
     print(True and True)
 
-    # Replace ¦ with the word 
+    # Replace | with the word 
     print(True or False)
 
     # Keyword 'in'
@@ -129,9 +141,18 @@ if print_classes:
 
         def speak(self):
             print(self.name + ' says: Bark!')
+
+        def fetch(self):
+            string = 'Enter something for {} to collect: '.format(self.name)
+            item = input(string)
+            if item == 'beer':
+                print('OMG WHAT A DOG!')
+            print('{} has gone to collect a {}'.format(self.name, item))
             
 
     lola = Dog('Lola', 4)
     mickey = Dog('Mickey', 4)
     mickey.speak()
     lola.speak()
+    mickey.fetch()
+    lola.fetch()
