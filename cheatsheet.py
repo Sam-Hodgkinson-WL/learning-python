@@ -21,6 +21,12 @@ if print_variables == True:
     variable_name = 'Some data type'
     print('A variable: {}'.format(variable_name))
 
+    multi_line_string = '''This is a
+    Multi line string
+    it is cool because it retains formatting!'''
+    
+    print(multi_line_string)
+
     # Set
     # -- Order does not matter!
     # -- Has to have unique values (if it has the same value then it will just take the last vesion of it!)
@@ -52,7 +58,10 @@ if print_methods == True:
 
     print('This is a print method')
     len(test_variable) # Length
+
     #.format - can be used to input variables in to a string similar to the backtick method in JS
+    #.format can alse be written as f'some test followed by {some_variable_name}'
+
     type(test_variable) # Same as type of in JS
 
     ## OPERATORS (only the ones that are different from JS)
@@ -76,6 +85,9 @@ if print_methods == True:
     # Append
     my_list = [1,2,3,]
     print(my_list.append(4))
+
+    #round (thing to be rounded, how many dec places(can be left blank!))
+    round(7/3, 2)
 
 # Control Flow
 print_control_flow = False
@@ -131,7 +143,7 @@ if print_functions:
 # CLASSES
 # Always create it with a capital letter so everyone knows it's a class
 
-print_classes = True
+print_classes = False
 if print_classes: 
 
     class Dog:
@@ -156,3 +168,11 @@ if print_classes:
     lola.speak()
     mickey.fetch()
     lola.fetch()
+
+
+# Importable Libraries - not installing anything
+import math
+
+print_imports = False
+if print_imports:
+    print(math.pi)
