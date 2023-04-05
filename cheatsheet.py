@@ -22,8 +22,8 @@ if print_variables == True:
     print('A variable: {}'.format(variable_name))
 
     multi_line_string = '''This is a
-    Multi line string
-    it is cool because it retains formatting!'''
+Multi line string
+it is cool because it retains formatting!'''
     
     print(multi_line_string)
 
@@ -32,6 +32,11 @@ if print_variables == True:
     # -- Has to have unique values (if it has the same value then it will just take the last vesion of it!)
     set_name = {1,2,'string',False, 1.2}
     print('A set: {}'.format(set_name))
+
+    # Can do 
+    some_list = [1,2,1,2,1,2,1,2]
+    some_other_list = set(some_list)
+    print(f'Some other list: {some_other_list}') # Removes duplicate values!!!!
 
     # List (Array in JS)
     list_name = [1,2,3]
@@ -57,6 +62,7 @@ print_methods = False
 if print_methods == True:
 
     print('This is a print method')
+
     len(test_variable) # Length
 
     #.format - can be used to input variables in to a string similar to the backtick method in JS
@@ -86,8 +92,43 @@ if print_methods == True:
     my_list = [1,2,3,]
     print(my_list.append(4))
 
+    # Insert
+    my_list.insert(2, 'a new value') # position to insert, value to instert
+    print(my_list)
+
+    # Remove
+    my_list.remove('a new value')
+    print(f'Using remove method {my_list}')
+
+    # Pop
+    my_list.pop() # removes the last value from a list
+    print(f'returns popped value - {my_list.pop()}')
+    print(f'Using pop - {my_list}')
+    my_list.append(3) # just to return my_list to prev state
+    my_list.append(4) # just to return my_list to prev state
+
+    # Copy -- stores a copy of a value, will not be changed if the original value is changed!!
+    ab_list = [1,2,3,4,5]
+    b_list = ab_list.copy()
+    ab_list.append(6)
+    print(f'ab_list: {ab_list}, b_list: {b_list}')
+
     #round (thing to be rounded, how many dec places(can be left blank!))
     round(7/3, 2)
+
+    # arr.splice is replaced by : in Python... written as a_list[start, end, jump up in]
+    a_list = [1,2,3,4,5,6,7,8,9,0]
+    print(a_list[0:len(a_list):1]) # is the same as...
+    print(a_list[::1])
+    print(a_list[2::3]) # start at 2, go to end, jump up in increments of 3
+
+    # range
+    # for i in range(20):
+        # print(i)
+
+    # List range
+    another_list = list(range(40))
+    print(another_list)
 
 # Control Flow
 print_control_flow = False
