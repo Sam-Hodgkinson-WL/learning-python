@@ -130,6 +130,10 @@ if print_methods == True:
     another_list = list(range(40))
     print(another_list)
 
+    # Dictionary Methods
+    # dict_name.get('key', 'default value if there is no key with that name in the dictionary')
+    # dict_name.get('key') will print out the key's value, if none exists then it just prints 'None' isntead of giving an error!
+
 # Control Flow
 print_control_flow = False
 if print_control_flow:
@@ -213,7 +217,15 @@ if print_classes:
 
 # Importable Libraries - not installing anything
 import math
+from collections import defaultdict
 
 print_imports = False
 if print_imports:
     print(math.pi)
+
+    ## Default dict allows us to append straight into the dictionary, even if the key doesn't already exist, it just creates it for us!
+    animals = defaultdict(list) # This line is required to set up defaultdict!! It tells us what type of dictionary it is!
+    print(animals)
+    animals['e'].append('elephant')
+    animals['e'].append('emu')
+    print(animals)
